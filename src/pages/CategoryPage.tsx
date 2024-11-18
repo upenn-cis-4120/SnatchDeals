@@ -21,49 +21,47 @@ export default function CategoryPage() {
           pb: 7,
         }}
       >
-        <Box>
+        <Box
+          bgcolor={"white"}
+          height={"6vh"}
+          width="100%"
+          display="flex"
+          sx={{ position: "sticky", top: 0,}}
+          zIndex={10}
+        >
+          <ButtonBase onClick={() => navigate(-1)}>
+            <Box height="100%" mx={2} display="flex" alignItems={"center"}>
+              <ArrowBackIcon />
+            </Box>
+          </ButtonBase>
           <Box
-            bgcolor={"white"}
-            height={"6vh"}
+            height="100%"
             width="100%"
             display="flex"
-            mx={1}
-            sx={{ position: "sticky", top: 0 }}
+            alignItems={"center"}
+            justifyContent={"center"}
           >
-            <ButtonBase onClick={() => navigate(-1)}>
-              <Box height="100%" mx={1} display="flex" alignItems={"center"}>
-                <ArrowBackIcon />
-              </Box>
-            </ButtonBase>
-            <Box
-              height="100%"
-              width="100%"
-              display="flex"
-              alignItems={"center"}
-              justifyContent={"center"}
-            >
-              <Typography component="span" variant="h5">
-                {category}
-              </Typography>
-            </Box>
+            <Typography component="span" variant="h5">
+              {category}
+            </Typography>
           </Box>
-          <Box>
-            <Grid2 container display={"flex"} mx={2} my={1} spacing={2}>
-              {dealDataArray.map(
-                ({ brandName, dealDescription, newPrice, oldPrice }, index) => (
-                  <Grid2 size={6}>
-                    <HomeCard
-                      index={index}
-                      cardTitle={brandName}
-                      body={dealDescription}
-                      newPrice={newPrice}
-                      oldPrice={oldPrice}
-                    />
-                  </Grid2>
-                )
-              )}
-            </Grid2>
-          </Box>
+        </Box>
+        <Box width={"100%"}>
+          <Grid2 container display={"flex"} mx={2} my={1} spacing={2}>
+            {dealDataArray.map(
+              ({ brandName, dealDescription, newPrice, oldPrice }, index) => (
+                <Grid2 size={6}>
+                  <HomeCard
+                    index={index}
+                    cardTitle={brandName}
+                    body={dealDescription}
+                    newPrice={newPrice}
+                    oldPrice={oldPrice}
+                  />
+                </Grid2>
+              )
+            )}
+          </Grid2>
         </Box>
       </Box>
     </>
