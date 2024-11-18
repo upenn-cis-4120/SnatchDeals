@@ -1,4 +1,3 @@
-import * as React from "react";
 import HomeScrollList from "../components/home/HomeScrollList";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import {
@@ -8,7 +7,6 @@ import {
   Grid2,
   ButtonBase,
   Typography,
-  Paper,
 } from "@mui/material";
 import HomeSpecialCategoryButton from "../components/home/HomeSpecialCategoryButton";
 

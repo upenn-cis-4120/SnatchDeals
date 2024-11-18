@@ -1,16 +1,9 @@
-import * as React from "react";
 import HomeCard from "./HomeCard";
 import ImageList from "@mui/material/ImageList";
 import {
   Box,
-  CardActionArea,
-  CardMedia,
-  Grid2,
   Container,
-  Button,
-  ButtonBase,
 } from "@mui/material";
-import Link from "react-router-dom";
 import deals from "../../data/deals.json";
 import DealDataInterface from "../../interfaces/DealDataInterface";
 

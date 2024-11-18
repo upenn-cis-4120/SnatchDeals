@@ -1,8 +1,8 @@
-import { useRef, useEffect } from "react";
+import { useRef} from "react";
 import "./App.css";
 import NavBar from "./nav/NavBar";
 import Home from "./pages/Home";
-import { Box, Button, CssBaseline, Paper } from "@mui/material";
+import { Box, CssBaseline} from "@mui/material";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import DealPage from "./pages/DealPage";
 import CategoryPage from "./pages/CategoryPage";

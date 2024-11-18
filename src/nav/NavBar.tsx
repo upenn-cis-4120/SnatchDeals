@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, BottomNavigation, Paper } from "@mui/material";
+import { BottomNavigation, Paper } from "@mui/material";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
 import HomeIcon from "@mui/icons-material/Home";
 import AppsIcon from "@mui/icons-material/Apps";

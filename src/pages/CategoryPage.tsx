@@ -1,8 +1,6 @@
 import {
   Box,
   ButtonBase,
-  Container,
-  Divider,
   Grid2,
   Typography,
 } from "@mui/material";

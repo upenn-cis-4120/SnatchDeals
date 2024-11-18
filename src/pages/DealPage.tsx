@@ -1,15 +1,10 @@
 import {
   Box,
-  Button,
   CardActionArea,
   CardMedia,
-  Divider,
   Grid2,
-  Paper,
   Typography,
 } from "@mui/material";
-import * as React from "react";
-import HomeScrollList from "../components/home/HomeScrollList";
 import deals from "../data/deals.json";
 import DealDataInterface from "../interfaces/DealDataInterface";
 import { useLocation } from "react-router-dom";
