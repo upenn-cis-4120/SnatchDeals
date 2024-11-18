@@ -1,43 +1,33 @@
-import { useState } from "react";
+import { useRef, useEffect } from "react";
 import "./App.css";
-import { Button, BottomNavigation, Paper } from "@mui/material";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import HomeIcon from "@mui/icons-material/Home";
-import AppsIcon from "@mui/icons-material/Apps";
-import SearchIcon from "@mui/icons-material/Search";
-import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
-import SettingsIcon from "@mui/icons-material/Settings";
+import NavBar from "./nav/NavBar";
+import Home from "./pages/Home";
+import { Box, Button, CssBaseline, Paper } from "@mui/material";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DealPage from "./pages/DealPage";
+import CategoryPage from "./pages/CategoryPage";
 
-function App() {
-  const [value, setValue] = useState(0);
+const App: React.FC<any> = () => {
+  const ref = useRef<HTMLDivElement>(null);
 
   return (
-    <>
-      <Button>Test123</Button>
-      <Paper
-        sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
-        elevation={3}
+    <BrowserRouter>
+      <Box
+        sx={{ width: "100vw", maxWidth: "50vh", minHeight: "500px", border: 1 }}
+        ref={ref}
       >
-        <BottomNavigation
-          showLabels
-          value={value}
-          onChange={(event, newValue) => {
-            setValue(newValue);
-          }}
-        >
-          <BottomNavigationAction
-            label="Home"
-            sx={{ fontFamily: '"Kaisei Tokumin"' }}
-            icon={<HomeIcon />}
-          />
-          <BottomNavigationAction label="Categories" icon={<AppsIcon />} />
-          <BottomNavigationAction label="Explore" icon={<SearchIcon />} />
-          <BottomNavigationAction label="Brands" icon={<DynamicFeedIcon />} />
-          <BottomNavigationAction label="Settings" icon={<SettingsIcon />} />
-        </BottomNavigation>
-      </Paper>
-    </>
+        <CssBaseline />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/deals/:key" element={<DealPage />} />
+          <Route path="/categories" element={<p>Categories Page</p>} />
+          <Route path="/categories/*" element={<CategoryPage />} />
+          <Route path="*" element={<p>Not found!</p>} />
+        </Routes>
+        <NavBar />
+      </Box>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
