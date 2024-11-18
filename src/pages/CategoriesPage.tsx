@@ -1,12 +1,9 @@
 import CategoryButton from '../components/categories/CategoryCard';
-import { useState } from "react";
 import { FaPizzaSlice, FaMobile, FaGlassCheers, FaRegFutbol, FaShoppingCart } from 'react-icons/fa';
 import { BsBagFill } from 'react-icons/bs';
 
 
 function App() { 
-  const [value, setValue] = useState(0);
-
   return (
     <>
       <div style={{ 
