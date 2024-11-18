@@ -18,7 +18,7 @@ export default function Home() {
         <CardActionArea>
           <CardMedia
             component="img"
-            image="public/images/homepage-promo-banner.png"
+            image={`images/homepage-promo-banner.png`}
             sx={{
               width: "100%",
               height: "25vh",

@@ -31,7 +31,7 @@ export default function DealPage() {
         <CardActionArea>
           <CardMedia
             component="img"
-            image={`../../public/images/${index}.jpg`}
+            image={`/images/${index}.jpg`}
             sx={{
               width: "100%",
               height: "35vh",

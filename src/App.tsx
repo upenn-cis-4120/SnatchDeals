@@ -13,7 +13,7 @@ const App: React.FC<any> = () => {
   return (
     <BrowserRouter>
       <Box
-        sx={{ width: "100vw", maxWidth: "50vh", minHeight: "500px", border: 1 }}
+        sx={{ width: "100vw", maxWidth: "50vh", minHeight: "500px"}}
         ref={ref}
       >
         <CssBaseline />
