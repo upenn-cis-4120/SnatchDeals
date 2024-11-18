@@ -9,9 +9,11 @@ import {
   Typography,
 } from "@mui/material";
 import HomeSpecialCategoryButton from "../components/home/HomeSpecialCategoryButton";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   //   const [activeStep, setActiveStep] = React.useState(0);
+  const navigate = useNavigate();
   return (
     <Box sx={{ alignItems: "flex-start", minHeight: "100vh", pb: 7 }}>
       <Box sx={{}}>
@@ -23,7 +25,6 @@ export default function Home() {
               width: "100%",
               height: "25vh",
               objectFit: "cover",
-              border: 0,
             }}
           />
         </CardActionArea>
@@ -79,13 +80,13 @@ export default function Home() {
       <Box sx={{ my: 0.5 }}>
         <Grid2 container>
           <Grid2>
-            <ButtonBase sx={{ px: 2, py: 0.5 }}>
+            <ButtonBase sx={{ px: 2, py: 0.5 }} onClick={() => navigate("/categories/food", {state: {category: "Fast Food"}})}>
               <Typography variant="h5">Fast Food</Typography>
             </ButtonBase>
           </Grid2>
           <Grid2 size="grow"></Grid2>
           <Grid2>
-            <ButtonBase sx={{ alignItems: "center", height: "100%", px: 2 }}>
+            <ButtonBase sx={{ alignItems: "center", height: "100%", px: 2 }} onClick={() => navigate("/categories/food", {state: {category: "Fast Food"}})}>
               <NavigateNextIcon />
             </ButtonBase>
           </Grid2>

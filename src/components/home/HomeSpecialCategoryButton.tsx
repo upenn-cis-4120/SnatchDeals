@@ -13,7 +13,7 @@ const HomeSpecialCategoryButton = () => {
             alignItems: "center",
           }}
         >
-          <Box height={"100%"} width={"100%"} display={"flex"} alignItems={"center"} sx={{bgcolor: "info.light"}}>
+          <Box borderRadius={2} height={"100%"} width={"100%"} display={"flex"} alignItems={"center"} sx={{bgcolor: "info.light"}}>
             <Typography
               variant={"body2"}
               fontWeight={600}

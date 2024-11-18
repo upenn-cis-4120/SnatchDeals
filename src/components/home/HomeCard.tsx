@@ -20,11 +20,11 @@ export default function HomeCard({
   const navigate = useNavigate();
   return (
     <>
-      <CardActionArea onClick={() => navigate(`deals/${index}`, {state: {index: `${index}`}})}>
+      <CardActionArea onClick={() => navigate(`/deals/${index}`, {state: {index: `${index}`}})}>
         <Paper variant="outlined">
           <CardMedia
             component="img"
-            image={`images/${index}.jpg`}
+            image={`/images/${index}.jpg`}
             alt="shake shack burgers and fries"
             sx={{ aspectRatio: 1 }}
           />

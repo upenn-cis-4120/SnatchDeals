@@ -24,7 +24,7 @@ const DealVoteButton: React.FC<DealVoteButtonProps> = (props) => {
             sx={{
               display: "flex",
               alignItems: "center",
-              mx: 1,
+              mx: 2,
               width: "100%",
             }}
           >
@@ -33,7 +33,7 @@ const DealVoteButton: React.FC<DealVoteButtonProps> = (props) => {
             ) : (
               <ThumbUpTwoToneIcon />
             )}
-            <Box width="100%">{clickedState ? numUpvote + 1 : numUpvote}</Box>
+            <Box px={1} width="100%">{clickedState ? numUpvote + 1 : numUpvote}</Box>
           </Typography>
         </>
       ) : (
@@ -43,7 +43,7 @@ const DealVoteButton: React.FC<DealVoteButtonProps> = (props) => {
             sx={{
               display: "flex",
               alignItems: "center",
-              mx: 1,
+              mx: 2,
               width: "100%",
             }}
           >
@@ -52,7 +52,7 @@ const DealVoteButton: React.FC<DealVoteButtonProps> = (props) => {
             ) : (
               <ThumbDownTwoToneIcon />
             )}
-            <Box width="100%">{clickedState ? numDownvote + 1 : numDownvote}</Box>
+            <Box px={1} width="100%">{clickedState ? numDownvote + 1 : numDownvote}</Box>
           </Typography>
         </>
       )}

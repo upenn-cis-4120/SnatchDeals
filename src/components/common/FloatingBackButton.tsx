@@ -1,5 +1,5 @@
 import { Box, Paper, ButtonBase } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import CloseIcon from '@mui/icons-material/Close';
 import { useNavigate } from "react-router-dom";
 
 const FloatingBackButton = () => {
@@ -10,8 +10,8 @@ const FloatingBackButton = () => {
       sx={{
         position: "fixed",
         top: 15,
-        height: "36px",
-        width: "36px",
+        height: "40px",
+        width: "40px",
       }}
     >
       <Paper
@@ -24,7 +24,7 @@ const FloatingBackButton = () => {
         }}
       >
         <ButtonBase onClick={() => navigate(-1)} sx={{height: "100%", width: "100%" }}>
-          <ArrowBackIcon />
+          <CloseIcon />
         </ButtonBase>
       </Paper>
     </Box>
