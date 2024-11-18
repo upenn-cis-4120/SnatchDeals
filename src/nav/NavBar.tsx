@@ -15,7 +15,7 @@ function NavBar() {
   return (
     <>
       <Paper
-        sx={{ position: "fixed", bottom: 0, width: "50vh" }}
+        sx={{ position: "fixed", bottom: 0,}}
         elevation={3}
       >
         <BottomNavigation
