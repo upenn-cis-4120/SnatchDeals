@@ -2,13 +2,6 @@ import CategoryButton from '../components/categories/CategoryCard';
 import { useState } from "react";
 import { FaPizzaSlice, FaMobile, FaGlassCheers, FaRegFutbol, FaShoppingCart } from 'react-icons/fa';
 import { BsBagFill } from 'react-icons/bs';
-import { BottomNavigation, Paper } from "@mui/material";
-import BottomNavigationAction from "@mui/material/BottomNavigationAction";
-import HomeIcon from "@mui/icons-material/Home";
-import AppsIcon from "@mui/icons-material/Apps";
-import SearchIcon from "@mui/icons-material/Search";
-import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
-import SettingsIcon from "@mui/icons-material/Settings";
 
 
 function App() { 
